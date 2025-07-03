@@ -41,7 +41,6 @@
 % Colorbox environments
 \usepackage[most]{tcolorbox}
 
-
 % -- Page layout
 
 % Layout adjustments of page (a4 without margin)
@@ -59,8 +58,8 @@
 \newcommand{\inboxspacing}{.015\paperheight}
 
 % Horizontal spacing of the boxes (must sum up to 1)
-\newcommand{\sideboxwidth}{.35}
-\newcommand{\mainboxwidth}{.65}
+\newcommand{\sideboxwidth}{.40}
+\newcommand{\mainboxwidth}{.60}
 
 % Vertical spacing of the boxes (must sum up to 1)
 \newcommand{\mainboxheight}{.990}
@@ -69,11 +68,6 @@
 %   sideboxwidth           mainboxwidth
 %  <------------> <---------------------------->
 %  _____________________________________________
-% |#############################################| ^
-% |#############################################| |
-% |################## HEADBOX ##################| | headboxheight
-% |#############################################| |
-% |#############################################| v
 % |///////////////                              | ^
 % |///////////////                              | |
 % |///////////////                              | |
@@ -129,6 +123,19 @@
 % FontAwesome icons
 \usepackage{fontawesome5}
 
+% Greek alphabet
+\usepackage{textgreek}
+\usepackage[main=english, greek]{babel}  
+\usepackage[utf8]{inputenc} 
+\usepackage{textalpha}
+\DeclareTextFontCommand{\textgreek}{\fontencoding{LGR}\selectfont}
+
+\AtBeginDocument{\selectlanguage{english}}
+
+% Enhanced tables
+\usepackage{tabularx}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+%\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
 \begin{document}
 
@@ -148,83 +155,82 @@
     {name=sidebar,
     column=1,
     span=\sideboxwidth,
-    rowspan=\mainboxheight}
+    rowspan=\mainboxheight
+    }
 {
 
-    \begin{tabular}{rl}
+    \begin{tabularx}{\linewidth}{@{} rL @{}}
 
         \multicolumn{2}{@{}c@{}}{\scalebox{0.25}{\input{images/image.tex}}} \\
-        % \multicolumn{2}{@{}c@{}}{\includegraphics[scale=0.25]{images/image.jpg}} \\
+        %\multicolumn{2}{@{} c @{}}{\includegraphics[scale=0.065]{images/image.jpg}} \\
         \mediumspace
 
-        \multicolumn{2}{@{} c @{}}{\namefont{Carl F. Gauss}} \\ 
+        \multicolumn{2}{@{} c @{}}{\namefont{Tizio Superfigo}} \\ 
         \mediumspace
 
-        & \titlefont{Contact} \\
+        & \titlefont{Contatti} \\
         \hline \mediumspace
 
         \multirow{4}{*}{\scalebox{2.5}{\faHome}}
-            & \textbf{Address} \\
-                & Göttingen \\
-                & Kingdom of Hanover \\
+            & \textbf{Indirizzo} \\
+                & Comune, Provincia \\
+                & Nazione \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{2.5}{\faPhone}}
-            & \textbf{Phone} \\
-                & \href{tel:+4901234567891}{+49 012 3456-7891} \\
+            & \textbf{Numero} \\
+                & \href{tel:+39 1234567890}{+39 123 456 7890} \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{2.5}{\faEnvelope}}
             & \textbf{E-Mail} \\
-                & \href{mailto:carl.gauss@uni-goe.de}{carl.gauss@uni-goe.de} \\
+                & \href{mailto:tizio.superfigo@email.com}{\small{tizio.superfigo@email.com}} \\
                 & \largespace
 
-        & \titlefont{Platforms} \\
+        & \titlefont{Piattaforme} \\
         \hline \mediumspace
 
         \multirow{2}{*}{\scalebox{2.5}{\faGithub}}
             & \textbf{GitHub} \\
-                & \href{https://youtu.be/dQw4w9WgXcQ}{CFGauss} \\
+                & \href{https://youtu.be/dQw4w9WgXcQ}{tizio\_superfigo} \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{2.5}{\faLinkedin}}
             & \textbf{LinkedIn} \\
-                & \href{https://youtu.be/dQw4w9WgXcQ}{Carl Friedrich Gauss} \\
+                & \href{https://youtu.be/dQw4w9WgXcQ}{Tizio Superfigo} \\
                 & \largespace
 
         & \titlefont{Skills} \\
         \hline \mediumspace
 
-        \multirow{2}{*}{\scalebox{2.5}{\faCog}}
-        & \raisebox{-0.75em}{\textbf{Math problem solving}} \\
+        \multirow{2}{*}{\scalebox{2.5}{\faCrosshairs}}
+        & \raisebox{-0.75em}{\textbf{Procastinazione attiva}} \\
             & \largespace 
 
-        \multirow{2}{*}{\scalebox{2.5}{\faSearch}}
-        & \raisebox{-0.75em}{\textbf{Autonomy in research}} \\
+        \multirow{2}{*}{\scalebox{2.5}{\faWrench}}
+        & \raisebox{-0.75em}{\textbf{Pause caffè}} \\
+            & \largespace 
+
+        \multirow{2}{*}{\scalebox{2.5}{\faHandPeace}}
+        & \raisebox{-0.75em}{\textbf{Battute per distrarre}} \\
                 & \largespace
                 & \smallspace
 
         & \titlefont{Languages} \\
         \hline \mediumspace
 
-        \multirow{2}{*}{\scalebox{0.075}{\input{flags/germany.tex}}}
-            & \textbf{German} \\
-                & Native \\
+        \multirow{2}{*}{\scalebox{0.075}{\input{flags/italy.tex}}}
+            & \textbf{Italiano} \\
+                & Nativo \\
                 & \smallspace
 
         \multirow{2}{*}{\scalebox{0.075}{\input{flags/britain.tex}}}
             & \textbf{English} \\
-                & Fluent \\
+                & Fluente \\
                 & \smallspace
 
-        \multirow{2}{*}{\scalebox{0.075}{\input{flags/france.tex}}}
-            & \textbf{French} \\
-                & Fluent \\
-                & \largespace
-
-    \end{tabular}
+    \end{tabularx}
 }
-
 
 % -- Mainbox
 
@@ -240,66 +246,62 @@
     rowspan=\mainboxheight}
 {
 
-    \begin{tabular}{>{\footnotesize}rl}
+    \begin{tabularx}{\textwidth}{>{\raggedleft\arraybackslash\footnotesize}p{3.3cm} X}
 
-        & \titlefont{\faGraduationCap\enspace Education} \\
+        & \titlefont{\faGraduationCap\enspace Educazione} \\
         \hline \mediumspace
 
-        02/1798 - 09/1799
-            & \textbf{University of Helmstedt} \\
-            & Doctoral dissertation \\
-            & Topic: Fundamental theorem of algebra \\
-            & Advisor: Johann Friedrich Pfaff \\
+        09/2015 - 06/2020
+            & \textbf{Liceo dell'educazione} \\
+            & Conseguimento del diploma del bon ton. \\
             & \smallspace
 
-        04/1795 - 02/1798
-            & \textbf{University of Göttingen} \\
-            & Study of mathematics \\
-            & Construction of regular 17-gon (ruler/compass) \\
-            & \smallspace
-
-        04/1788 - 04/1795
-            & \textbf{Gymnasium Brunswick}\\
-            & Study of high German and Latin \\
-            & Stipend from the duke of Brunswick \\
+        09/2021 - Presente
+            & \textbf{Università della gentilezza} \\
+            & Ringraziamenti \& complimenti \\
             & \largespace
 
-        & \titlefont{\faChartPie\enspace Work experience} \\
+        & \titlefont{\faChartPie\enspace Esperienze lavorative} \\
         \hline \mediumspace
 
-        Since 02/1807
-            & \textbf{Astronomical Observatory in Göttingen} \\
-            & Full professor of astronomy \\
-            & Director of the observatory \\
+        2016 - 2022
+            & \textbf{Temperamatite} \\
+            & Varie esperienze come temperamatite.\\
             & \smallspace
 
-        04/1818 - 08/1826
-            & \textbf{State of Hanover} \\
-            & Geodesic survey of Hanover \\
-            & Triangulation of the entire state \\
-            & Invented heliotrope to simplify measurements \\ 
+        2020
+            & \textbf{Guardatore di muri} \\
+            & Guardato molti muri.\\
+            & Alcuni avevano quadri, altri solo vernice. \\
             & \largespace
 
-        & \titlefont{\faFlask\enspace Projects} \\
+        & \titlefont{\faFlask\enspace Progetti} \\
         \hline \mediumspace
-        1832
-            & \textbf{The Intensity of the Earth's Magnetic Force} \\
-        1827
-            & \textbf{General Investigations of Curved Surfaces} \\
-        1809
-            & \textbf{Theory of the Motion of the Heavenly Bodies} \\
-        1801
-            & \textbf{Arithmetical Investigations} \\
+        
+            & \textbf{Frigo a pedali} \\
+            & Un frigo che usa i pedali, utile per chi deve dimagrire. \\
+            & \smallspace
+
+            & \textbf{Martello di vetro} \\
+            & Martello monouso. \\ 
+            & \smallspace
+
+            & \textbf{Profumo inodore} \\
+            & Utile per quando nessun'altro profumo ti convince. \\ 
+            & \smallspace
+
+            & \textbf{Chiodo bifronte} \\
+            & Chiodo con due teste. \\
             & \largespace
 
         & \titlefont{\faPaperPlane\enspace Hobbies} \\
         \hline \mediumspace
-            & Astronomical observations and measurements \\
-            & Investigation of prime number distribution \\
-            & Observation of Earth's magnetic field \\
-            & Philology and Russian literature
+            & Salutare \\
+            & Guardare l'acqua bollire \\
+            & Cucinare gelati \\
+            & \largespace
 
-    \end{tabular}
+    \end{tabularx}
 }
 
 
