@@ -16,8 +16,30 @@ Some of the main features that characterize this template are the
 
 Added Features with this fork:
 - font awesome support
+- SVG support
 - enhanced tables management
 - greek letters support 
+
+### SVG
+
+To enable SVG support, on VS code you have to enable shell escape. Visit [this link](https://github.com/James-Yu/LaTeX-Workshop/wiki/FAQ#how-to-pass--shell-escape-to-latexmk) 
+
+- go to `settings` 
+- search `latex-workshop.latex.tools`
+- edit the json adding `-shell-escape` in the `arg` section:
+    ```json
+    ...
+    "args": [
+                "-shell-escape",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+    ...
+    ```
 
 ### Icons
 [FMatti](https://github.com/FMatti) designed a set of vector illustrations that can be used as icons to guide the eye of the reader towards the relevant information.
