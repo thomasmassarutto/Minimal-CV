@@ -140,6 +140,10 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 %\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
 
+% custom elements
+\input{custom-elements/custom-elements.tex}
+
+
 \begin{document}
 
 \begin{tcbposter}[
@@ -249,62 +253,45 @@
     rowspan=\mainboxheight}
 {
 
-    \begin{tabularx}{\textwidth}{>{\raggedleft\arraybackslash\footnotesize}p{3.3cm} X}
+    \begin{tabularx}{\textwidth}{p{0.5cm} X}
 
-        & \titlefont{\faGraduationCap\enspace Educazione} \\
+    & \titlefont{\faGraduationCap\enspace Educazione} \\
+    \hline \mediumspace
+
+        \lifeevent{Liceo dell'educazione}{09/14 - 06/20}{Conseguimento del diploma del bon ton.}
+        \smallspace
+        \lifeevent{Università della gentilezza}{09/20 - 06/23}{Ringraziamenti \& complimenti}
+        \largespace
+
+    & \titlefont{\faChartPie\enspace Esperienze lavorative} \\
+    \hline \mediumspace
+
+        \lifeevent{Temperamatite}{2016 - 2022}{Varie esperienze come temperamatite}
+        \smallspace
+        \lifeevent{Guardatore di muri}{2020}{Guardato molti muri. \\& Alcuni avevano quadri, altri solo vernice.}
+        \largespace
+
+    & \titlefont{\faFlask\enspace Progetti} \\
         \hline \mediumspace
 
-        09/2015 - 06/2020
-            & \textbf{Liceo dell'educazione} \\
-            & Conseguimento del diploma del bon ton. \\
-            & \smallspace
-
-        09/2021 - Presente
-            & \textbf{Università della gentilezza} \\
-            & Ringraziamenti \& complimenti \\
-            & \largespace
-
-        & \titlefont{\faChartPie\enspace Esperienze lavorative} \\
-        \hline \mediumspace
-
-        2016 - 2022
-            & \textbf{Temperamatite} \\
-            & Varie esperienze come temperamatite.\\
-            & \smallspace
-
-        2020
-            & \textbf{Guardatore di muri} \\
-            & Guardato molti muri.\\
-            & Alcuni avevano quadri, altri solo vernice. \\
-            & \largespace
-
-        & \titlefont{\faFlask\enspace Progetti} \\
-        \hline \mediumspace
-        
-            & \textbf{Frigo a pedali} \\
-            & Un frigo che usa i pedali, utile per chi deve dimagrire. \\
-            & \smallspace
-
-            & \textbf{Martello di vetro} \\
-            & Martello monouso. \\ 
-            & \smallspace
-
-            & \textbf{Profumo inodore} \\
-            & Utile per quando nessun'altro profumo ti convince. \\ 
-            & \smallspace
-
-            & \textbf{Chiodo bifronte} \\
-            & Chiodo con due teste. \\
-            & \largespace
-
-        & \titlefont{\faPaperPlane\enspace Hobbies} \\
-        \hline \mediumspace
+        \lifeproject{Frigo a pedali}{Un frigo che usa i pedali, utile per chi deve dimagrire.}
+        \smallspace
+        \lifeproject{Martello di vetro}{Martello monouso.}
+        \smallspace
+        \lifeproject{Profumo inodore}{Utile per quando nessun'altro profumo ti convince.}
+        \smallspace
+        \lifeproject{Guardatore di muri}{Guardato molti muri. \\& Alcuni avevano quadri, altri solo vernice.}
+        \largespace
+    
+    & \titlefont{\faPaperPlane\enspace Hobbies} \\
+    \hline \mediumspace
             & Salutare \\
             & Guardare l'acqua bollire \\
             & Cucinare gelati \\
             & \largespace
 
-    \end{tabularx}
+\end{tabularx}
+
 }
 
 

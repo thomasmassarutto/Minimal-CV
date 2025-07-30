@@ -348,6 +348,9 @@ INPUT /usr/share/texmf-dist/tex/latex/greek-fontenc/textalpha.sty
 INPUT /usr/share/texmf-dist/tex/latex/greek-fontenc/textalpha.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT ./custom-elements/custom-elements.tex
+INPUT ./custom-elements/custom-elements.tex
+INPUT custom-elements/custom-elements.tex
 INPUT /usr/share/texmf-dist/tex/latex/raleway/T1Raleway-TLF.fd
 INPUT /usr/share/texmf-dist/tex/latex/raleway/T1Raleway-TLF.fd
 INPUT /usr/share/texmf-dist/tex/latex/raleway/T1Raleway-TLF.fd
@@ -446,8 +449,8 @@ INPUT flags/italy.tex
 INPUT ./flags/britain.tex
 INPUT ./flags/britain.tex
 INPUT flags/britain.tex
-INPUT /usr/share/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5free1solid.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5free0solid.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/fontawesome5/fa5free2solid.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/impallari/raleway/Raleway-SemiBold-tlf-t1.vf

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1752569327.07044 "/home/thomas/Scrivania/Latech/Minimal-CV/Minimal-CV.tex" "Minimal-CV.pdf" "Minimal-CV" 1752569328.54631 0
-  "/home/thomas/Scrivania/Latech/Minimal-CV/Minimal-CV.tex" 1752569325.06501 9014 22684243255c89205905bf8f71cb5d2a ""
+["pdflatex"] 1753866107.21869 "/home/thomas/Scrivania/Latech/Minimal-CV/Minimal-CV.tex" "Minimal-CV.pdf" "Minimal-CV" 1753866109.25666 0
+  "/home/thomas/Scrivania/Latech/Minimal-CV/Minimal-CV.tex" 1753866106.95752 8778 1841db668bfb2ee543aaf9397a7713b3 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1742685315 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc" 1742685315 3083 a707712f77b073b3833e4b1334a30e99 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1742685315 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -237,9 +237,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1751467031 5348269 2573a1a4fd61f7fbca307903e427192d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1751466994 2039347 07f4587eb300fab99bdabcb93ee436ff ""
-  "Minimal-CV.aux" 1752569328.40363 396 82b04d74512246714ff8633067eac810 "pdflatex"
-  "Minimal-CV.out" 1752569327.99821 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Minimal-CV.tex" 1752569325.06501 9014 22684243255c89205905bf8f71cb5d2a ""
+  "Minimal-CV.aux" 1753866109.07011 396 82b04d74512246714ff8633067eac810 "pdflatex"
+  "Minimal-CV.out" 1753866108.53012 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Minimal-CV.tex" 1753866106.95752 8778 1841db668bfb2ee543aaf9397a7713b3 ""
+  "custom-elements/custom-elements.tex" 1753865971.17405 142 6da37f40154760b7e5e3a756f7dffc0f ""
   "flags/britain.tex" 1751444999.50197 952 2b215db63d9054994db905c253e5eb25 ""
   "flags/italy.tex" 1751444999.50219 295 7363b5fc932ff7bfbfaf922e3885e338 ""
   "images/image.tex" 1751444999.50291 1375 2bb8ce56287cda6308a56a6c94757632 ""
