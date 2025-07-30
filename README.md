@@ -60,6 +60,6 @@ Custom color schemes can be quite easily added to the default design to personal
 ## Usage
 To build a pdf version of the CV simply run the following commands:
 
-    git clone https://github.com/FMatti/Minimal-CV.git
+    git clone https://github.com/thomasmassarutto/Minimal-CV.git
     cd Minimal-CV
     pdflatex Minimal-CV.tex
